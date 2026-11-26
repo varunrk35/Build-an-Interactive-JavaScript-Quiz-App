@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Quick Quiz | A little knowledge goes a long way</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Quick Quiz home">
+          <span class="brand-mark" aria-hidden="true">Q</span>
+          <span>RAD<span class="brand-accent"> Quiz</span></span>
+        </a>
+        <span class="header-note"><span class="status-dot"></span> A little brain break</span>
+      </header>
+
+      <section class="quiz-layout" aria-label="Multiple-choice quiz">
+        <aside class="intro-panel">
+          <span class="eyebrow"><span aria-hidden="true">✦</span> THE DAILY MIX</span>
+          <h1>A little<br />knowledge goes<br /><span>a long way.</span></h1>
+          <p>Eight questions, a few surprises, and absolutely no pressure. Ready?</p>
+          <div class="intro-meta">
+            <span class="meta-icon" aria-hidden="true">◷</span>
+            <span>About 3 minutes</span>
+            <span class="meta-divider" aria-hidden="true"></span>
+            <span>8 questions</span>
+          </div>
+          <div class="doodle doodle-one" aria-hidden="true">✳</div>
+          <div class="doodle doodle-two" aria-hidden="true">✦</div>
+        </aside>
+
+        <section class="quiz-card" aria-label="Quiz">
+          <div class="quiz-topline">
+            <span id="question-count" class="question-count">QUESTION 01 <span>/ 08</span></span>
+            <span class="score-pill"><span aria-hidden="true">✦</span> <span id="score">0</span> pts</span>
+          </div>
+          <div
+            id="progress-track"
+            class="progress-track"
+            role="progressbar"
+            aria-label="Quiz progress"
+            aria-valuemin="0"
+            aria-valuemax="8"
+            aria-valuenow="0"
+          >
+            <span id="progress-bar" class="progress-bar"></span>
+          </div>
+
+          <div id="quiz-content">
+            <p id="question" class="question-text"></p>
+            <div id="options" class="options-list" aria-label="Answer options"></div>
+            <div class="quiz-footer">
+              <p id="feedback" class="feedback" aria-live="polite"></p>
+              <button id="next-button" class="next-button" type="button" disabled>
+                Next question <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <section id="result-screen" class="result-screen" aria-live="polite" hidden>
+            <span id="result-icon" class="result-icon" aria-hidden="true">🎉</span>
+            <p class="eyebrow">THAT'S A WRAP</p>
+            <h2 id="final-score"></h2>
+            <p id="result-message" class="result-message"></p>
+            <button id="restart-button" class="next-button restart-button" type="button">
+              Give it another go <span aria-hidden="true">↻</span>
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <footer class="site-footer">
+        <span>Stay curious. It looks good on you.</span>
+        <span>QUICK QUIZ <span aria-hidden="true">·</span> VOL. 01</span>
+      </footer>
+    </main>
+  </body>
+</html>
